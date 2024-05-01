@@ -20,8 +20,12 @@ const MarYGonza = () => {
         phrase={'"Amar es mirar juntos en la misma dirección"'}
       />
       <EventLocation
-        foto1={img1}
-        foto2={img2}
+        foto1={
+          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/novios.jpeg"
+        }
+        foto2={
+          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/novios2.jpeg"
+        }
         lugar={"Parroquia nuestra Sra. del Carmen, Famaillá"}
         fecha={"17/08/2024"}
         hora={"17:00 hs."}
@@ -56,7 +60,9 @@ const MarYGonza = () => {
         qr={
           "Escaneá el código QR o presiona el botón y sube fotos y videos en nuestro álbum ♥"
         }
-        img={qr}
+        img={
+          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/qrcode.png"
+        }
         url={"https://photos.app.goo.gl/wghEtyWdLD5CNgXr5"}
       />
       <Footer

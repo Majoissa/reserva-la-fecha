@@ -7,7 +7,11 @@ const Main = () => {
   const img = require("./background.png");
   return (
     <Box>
-      <MainImage src={img} />
+      <MainImage
+        src={
+          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/background.png"
+        }
+      />
       <MainTexts title="Mar y Gonza" subtitle="¡Nos casamos!" />
     </Box>
   );
