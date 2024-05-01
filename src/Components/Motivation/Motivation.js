@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Motivation = ({ title, phrase }) => {
   return (
-    <VStack bg={"#cddaba"} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={"#ebd4af"} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "100%", sm: "70%", md: "40%" }}

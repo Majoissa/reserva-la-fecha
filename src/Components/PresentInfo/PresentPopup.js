@@ -16,8 +16,9 @@ const PresentPopup = () => {
     <>
       <Button
         onClick={onOpen}
-        colorScheme="green"
         fontFamily={'"Josefin Sans", sans-serif'}
+        bg={"#b4c092"}
+        color={"white"}
       >
         Ver más
       </Button>

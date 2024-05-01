@@ -14,7 +14,7 @@ const EventAssistance = ({
   prohibido,
 }) => {
   return (
-    <VStack bg={"#cddaba"} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={"#ebd4af"} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "100%", sm: "70%", md: "40%" }}
@@ -52,7 +52,8 @@ const EventAssistance = ({
         </Fade>
         <a href={url} target="_blank" rel="noreferrer">
           <Button
-            colorScheme="green"
+            bg={"#b4c092"}
+            color={"white"}
             fontFamily={'"Josefin Sans", sans-serif'}
             my={"1rem"}
           >

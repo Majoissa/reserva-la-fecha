@@ -84,7 +84,8 @@ const EventLocation = ({
           <a href={ubi1} target="_blank" rel="noreferrer">
             <Button
               fontFamily={'"Josefin Sans", sans-serif'}
-              colorScheme="green"
+              bg={"#b4c092"}
+              color={"white"}
             >
               Ver ubicación
             </Button>
@@ -146,7 +147,8 @@ const EventLocation = ({
           <a href={ubi2} target="_blank" rel="noreferrer">
             <Button
               fontFamily={'"Josefin Sans", sans-serif'}
-              colorScheme="green"
+              bg={"#b4c092"}
+              color={"white"}
             >
               Ver ubicación
             </Button>
