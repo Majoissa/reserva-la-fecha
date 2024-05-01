@@ -4,7 +4,15 @@ import { Fade } from "react-awesome-reveal";
 import { GiAmpleDress } from "react-icons/gi";
 import { MdBoy } from "react-icons/md";
 
-const EventAssistance = ({ phrase, confirm, url, drescode, text }) => {
+const EventAssistance = ({
+  phrase,
+  confirm,
+  url,
+  drescode,
+  text,
+  mujeres,
+  prohibido,
+}) => {
   return (
     <VStack bg={"#cddaba"} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
@@ -74,6 +82,28 @@ const EventAssistance = ({ phrase, confirm, url, drescode, text }) => {
             color={"#44131b"}
           >
             {text}
+          </Heading>
+        </Fade>
+        <Fade cascade direction="left">
+          <Heading
+            mt={5}
+            as={"h3"}
+            fontFamily={'"Josefin Sans", sans-serif'}
+            fontWeight={400}
+            textTransform={"uppercase"}
+            size={"lg"}
+            color={"#975468"}
+          >
+            {mujeres}
+          </Heading>
+          <Heading
+            as={"h3"}
+            fontFamily={'"Josefin Sans", sans-serif'}
+            fontWeight={400}
+            size={"lg"}
+            color={"#44131b"}
+          >
+            {prohibido}
           </Heading>
         </Fade>
       </Box>

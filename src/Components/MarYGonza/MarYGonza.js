@@ -36,6 +36,10 @@ const MarYGonza = () => {
         url={"https://forms.gle/UsPPDQSExwq1McaV9"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
+        mujeres={"¡ATENCIÓN MUJERES!"}
+        prohibido={
+          "No usar estos colores: blanco, natural, cobre, dorado y azul."
+        }
       />
       <PresentInfo
         text={

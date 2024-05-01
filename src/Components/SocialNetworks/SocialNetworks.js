@@ -8,7 +8,8 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
     <VStack
       bg={"#e9e9e9"}
       width={"100%"}
-      height={"100vh"}
+      height={"auto"}
+      py="8rem"
       margin={"auto"}
       textAlign={"center"}
       display={"flex"}
