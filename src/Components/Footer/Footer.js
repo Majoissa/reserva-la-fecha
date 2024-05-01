@@ -3,7 +3,7 @@ import { VStack, Heading, Box, Button, HStack } from "@chakra-ui/react";
 const Footer = ({ text }) => {
   return (
     <VStack
-      bg={"#cddaba"}
+      bg={"#ebd4af"}
       width={"100%"}
       height={"auto"}
       px={"2rem"}
