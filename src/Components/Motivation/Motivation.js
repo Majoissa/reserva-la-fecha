@@ -1,10 +1,10 @@
 import { VStack, Heading, Box } from "@chakra-ui/react";
 import { GiLinkedRings } from "react-icons/gi";
 import { Fade } from "react-awesome-reveal";
-
+//#eee2d3
 const Motivation = ({ title, phrase }) => {
   return (
-    <VStack bg={"#ebd4af"} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={"#eee2d3"} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "100%", sm: "70%", md: "40%" }}
@@ -17,7 +17,7 @@ const Motivation = ({ title, phrase }) => {
           alignItems={"center"}
           mb={"2rem"}
         >
-          <GiLinkedRings color={"#44131b"} size={"50px"} />
+          <GiLinkedRings color={"#406fa2"} size={"50px"} />
         </Box>
         <Fade cascade direction="down" damping={0.8}>
           <Heading
@@ -26,7 +26,7 @@ const Motivation = ({ title, phrase }) => {
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#975468"}
+            color={"#194279"}
           >
             {title}
           </Heading>
@@ -35,7 +35,7 @@ const Motivation = ({ title, phrase }) => {
             fontFamily={'"Josefin Sans", sans-serif'}
             fontWeight={400}
             size={"lg"}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {phrase}
           </Heading>

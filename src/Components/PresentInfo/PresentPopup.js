@@ -30,7 +30,7 @@ const PresentPopup = () => {
             fontFamily={'"Josefin Sans", sans-serif'}
             fontWeight={400}
             size={"lg"}
-            color={"#975468"}
+            color={"#194279"}
           >
             Datos Bancarios
           </ModalHeader>
@@ -40,7 +40,7 @@ const PresentPopup = () => {
               fontFamily={'"Josefin Sans", sans-serif'}
               fontWeight={400}
               size={"lg"}
-              color={"#44131b"}
+              color={"#406fa2"}
             >
               CTA: 4135920-7 089-3
             </Text>
@@ -48,7 +48,7 @@ const PresentPopup = () => {
               fontFamily={'"Josefin Sans", sans-serif'}
               fontWeight={400}
               size={"lg"}
-              color={"#44131b"}
+              color={"#406fa2"}
             >
               CBU: 0070089430004135920733
             </Text>
@@ -56,7 +56,7 @@ const PresentPopup = () => {
               fontFamily={'"Josefin Sans", sans-serif'}
               fontWeight={400}
               size={"lg"}
-              color={"#44131b"}
+              color={"#406fa2"}
             >
               Alias: MARYGON.2024
             </Text>
@@ -64,7 +64,7 @@ const PresentPopup = () => {
               fontFamily={'"Josefin Sans", sans-serif'}
               fontWeight={400}
               size={"lg"}
-              color={"#44131b"}
+              color={"#406fa2"}
             >
               Banco Galicia
             </Text>
@@ -72,7 +72,7 @@ const PresentPopup = () => {
               fontFamily={'"Josefin Sans", sans-serif'}
               fontWeight={400}
               size={"lg"}
-              color={"#44131b"}
+              color={"#406fa2"}
             >
               CUIL: 20366679384
             </Text>

@@ -20,7 +20,7 @@ const MainTexts = ({ title, subtitle }) => {
           as="h1"
           fontFamily={'"Parisienne", cursive'}
           size={"3xl"}
-          color={"#975468"}
+          color={"#194279"}
         >
           {title}
         </Heading>
@@ -31,7 +31,7 @@ const MainTexts = ({ title, subtitle }) => {
           textTransform={"uppercase"}
           size={"lg"}
           mt={3}
-          color={"#44131b"}
+          color={"#406fa2"}
         >
           {subtitle}
         </Heading>

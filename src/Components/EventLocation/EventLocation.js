@@ -40,41 +40,41 @@ const EventLocation = ({
               mb={"1rem"}
             >
               <Box ml={-7} mt={-9} mb={5}>
-                <FaMapPin color="#975468" fontSize={"25px"} />
+                <FaMapPin color="#194279" fontSize={"25px"} />
               </Box>
               <Image mb={"1rem"} src={foto1} alt="Mar y Gonza" />
               <HStack>
-                <MdOutlineChurch fontSize={"45px"} color="#975468" />
+                <MdOutlineChurch fontSize={"45px"} color="#194279" />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {lugar}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegCalendarAlt color="#975468" fontSize={"25px"} />
+                <FaRegCalendarAlt color="#194279" fontSize={"25px"} />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {fecha}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegClock color="#975468" fontSize={"25px"} />
+                <FaRegClock color="#194279" fontSize={"25px"} />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {hora}
                 </Text>
@@ -103,41 +103,41 @@ const EventLocation = ({
               mb={"1rem"}
             >
               <Box ml={-7} mt={-9} mb={5}>
-                <FaMapPin color="#975468" fontSize={"25px"} />
+                <FaMapPin color="#194279" fontSize={"25px"} />
               </Box>
               <Image mb={"1rem"} src={foto2} alt="Mar y Gonza" />
               <HStack>
-                <FaChampagneGlasses fontSize={"28px"} color="#975468" />
+                <FaChampagneGlasses fontSize={"28px"} color="#194279" />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {fiesta}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegCalendarAlt color="#975468" fontSize={"25px"} />
+                <FaRegCalendarAlt color="#194279" fontSize={"25px"} />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {fecha}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegClock color="#975468" fontSize={"25px"} />
+                <FaRegClock color="#194279" fontSize={"25px"} />
                 <Text
                   fontFamily={'"Josefin Sans", sans-serif'}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#44131b"}
+                  color={"#406fa2"}
                 >
                   {horafiesta}
                 </Text>

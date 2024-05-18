@@ -22,7 +22,7 @@ const PresentInfo = ({ text }) => {
           fontFamily={'"Josefin Sans", sans-serif'}
           fontWeight={400}
           size={"lg"}
-          color={"#44131b"}
+          color={"#406fa2"}
         >
           {text}
         </Heading>

@@ -5,7 +5,6 @@ import { Box } from "@chakra-ui/react";
 
 const Main = () => {
   //test
-  const img = require("./background.png");
   return (
     <Box>
       <MainImage

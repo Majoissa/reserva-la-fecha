@@ -14,7 +14,7 @@ const EventAssistance = ({
   prohibido,
 }) => {
   return (
-    <VStack bg={"#ebd4af"} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={"#eee2d3"} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "100%", sm: "70%", md: "40%" }}
@@ -27,7 +27,7 @@ const EventAssistance = ({
           alignItems={"center"}
           mb={"2rem"}
         >
-          <FaRegCalendarAlt color={"#44131b"} size={"50px"} />
+          <FaRegCalendarAlt color={"#406fa2"} size={"50px"} />
         </Box>
         <Fade cascade direction="left">
           <Heading
@@ -36,7 +36,7 @@ const EventAssistance = ({
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#975468"}
+            color={"#194279"}
           >
             {phrase}
           </Heading>
@@ -45,7 +45,7 @@ const EventAssistance = ({
             fontFamily={'"Josefin Sans", sans-serif'}
             fontWeight={400}
             size={"lg"}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {confirm}
           </Heading>
@@ -61,8 +61,8 @@ const EventAssistance = ({
           </Button>
         </a>
         <HStack mt={"2rem"} justifyContent={"center"} alignItems={"center"}>
-          <GiAmpleDress color={"#44131b"} size={"50px"} />{" "}
-          <MdBoy color={"#44131b"} size={"70px"} />
+          <GiAmpleDress color={"#406fa2"} size={"50px"} />{" "}
+          <MdBoy color={"#406fa2"} size={"70px"} />
         </HStack>
         <Fade cascade direction="left">
           <Heading
@@ -71,7 +71,7 @@ const EventAssistance = ({
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#975468"}
+            color={"#194279"}
           >
             {drescode}
           </Heading>
@@ -80,7 +80,7 @@ const EventAssistance = ({
             fontFamily={'"Josefin Sans", sans-serif'}
             fontWeight={400}
             size={"lg"}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {text}
           </Heading>
@@ -93,7 +93,7 @@ const EventAssistance = ({
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#975468"}
+            color={"#194279"}
           >
             {mujeres}
           </Heading>
@@ -102,7 +102,7 @@ const EventAssistance = ({
             fontFamily={'"Josefin Sans", sans-serif'}
             fontWeight={400}
             size={"lg"}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {prohibido}
           </Heading>

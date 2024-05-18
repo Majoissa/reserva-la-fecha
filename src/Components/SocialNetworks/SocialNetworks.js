@@ -24,7 +24,7 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#975468"}
+            color={"#194279"}
             textTransform={"uppercase"}
           >
             {text}
@@ -34,20 +34,20 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {description}
           </Text>
         </Fade>
       </Box>
-      <IoLogoInstagram fontSize={"50px"} color={"#975468"} />{" "}
+      <IoLogoInstagram fontSize={"50px"} color={"#194279"} />{" "}
       <Fade>
         <Text
           fontFamily={'"Josefin Sans", sans-serif'}
           fontWeight={400}
           size={"lg"}
           mt={3}
-          color={"#44131b"}
+          color={"#406fa2"}
         >
           {insta}
         </Text>
@@ -56,7 +56,7 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
           fontWeight={400}
           size={"lg"}
           mt={3}
-          color={"#44131b"}
+          color={"#406fa2"}
         >
           {tags}
         </Text>
@@ -66,7 +66,7 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#44131b"}
+            color={"#406fa2"}
           >
             {qr}
           </Text>
