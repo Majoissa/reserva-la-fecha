@@ -10,7 +10,7 @@ const Main = () => {
     <Box>
       <MainImage
         src={
-          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/background.png"
+          "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/background2.png"
         }
       />
       <MainTexts title="Mar y Gonza" subtitle="¡Nos casamos!" />
