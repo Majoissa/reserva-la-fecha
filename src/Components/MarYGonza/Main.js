@@ -12,7 +12,14 @@ const Main = () => {
           "https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MarYGonza/background2.png"
         }
       />
-      <MainTexts title="Mar y Gonza" subtitle="¡Nos casamos!" />
+      <MainTexts
+        title="Mar y Gonza"
+        subtitle="¡Nos casamos!"
+        titleColor={"#194279"}
+        subColor={"#406fa2"}
+        titleFont={'"Parisienne", cursive'}
+        subFont={'"Josefin Sans", sans-serif'}
+      />
     </Box>
   );
 };

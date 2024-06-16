@@ -10,16 +10,20 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const PresentPopup = () => {
+const PresentPopup = ({
+  titleColor,
+  textColor,
+  cuenta,
+  cbu,
+  alias,
+  banco,
+  cuil,
+  font,
+}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button
-        onClick={onOpen}
-        fontFamily={'"Josefin Sans", sans-serif'}
-        bg={"#b4c092"}
-        color={"white"}
-      >
+      <Button onClick={onOpen} fontFamily={font} bg={"#b4c092"} color={"white"}>
         Ver más
       </Button>
 
@@ -27,54 +31,54 @@ const PresentPopup = () => {
         <ModalOverlay />
         <ModalContent>
           <ModalHeader
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             size={"lg"}
-            color={"#194279"}
+            color={titleColor}
           >
             Datos Bancarios
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text
-              fontFamily={'"Josefin Sans", sans-serif'}
+              fontFamily={font}
               fontWeight={400}
               size={"lg"}
-              color={"#406fa2"}
+              color={textColor}
             >
-              CTA: 4135920-7 089-3
+              {cuenta}
             </Text>
             <Text
-              fontFamily={'"Josefin Sans", sans-serif'}
+              fontFamily={font}
               fontWeight={400}
               size={"lg"}
-              color={"#406fa2"}
+              color={textColor}
             >
-              CBU: 0070089430004135920733
+              {cbu}
             </Text>
             <Text
-              fontFamily={'"Josefin Sans", sans-serif'}
+              fontFamily={font}
               fontWeight={400}
               size={"lg"}
-              color={"#406fa2"}
+              color={textColor}
             >
-              Alias: MARYGON.2024
+              {alias}
             </Text>
             <Text
-              fontFamily={'"Josefin Sans", sans-serif'}
+              fontFamily={font}
               fontWeight={400}
               size={"lg"}
-              color={"#406fa2"}
+              color={textColor}
             >
-              Banco Galicia
+              {banco}
             </Text>
             <Text
-              fontFamily={'"Josefin Sans", sans-serif'}
+              fontFamily={font}
               fontWeight={400}
               size={"lg"}
-              color={"#406fa2"}
+              color={textColor}
             >
-              CUIL: 20366679384
+              {cuil}
             </Text>
           </ModalBody>
         </ModalContent>

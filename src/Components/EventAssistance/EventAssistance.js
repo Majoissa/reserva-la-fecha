@@ -12,9 +12,15 @@ const EventAssistance = ({
   text,
   mujeres,
   prohibido,
+  bgColor,
+  iconColor,
+  titleColor,
+  subColor,
+  font,
+  icon,
 }) => {
   return (
-    <VStack bg={"#eee2d3"} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={bgColor} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "100%", sm: "70%", md: "40%" }}
@@ -27,60 +33,55 @@ const EventAssistance = ({
           alignItems={"center"}
           mb={"2rem"}
         >
-          <FaRegCalendarAlt color={"#406fa2"} size={"50px"} />
+          {icon}
         </Box>
         <Fade cascade direction="left">
           <Heading
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#194279"}
+            color={titleColor}
           >
             {phrase}
           </Heading>
           <Heading
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             size={"lg"}
-            color={"#406fa2"}
+            color={subColor}
           >
             {confirm}
           </Heading>
         </Fade>
         <a href={url} target="_blank" rel="noreferrer">
-          <Button
-            bg={"#b4c092"}
-            color={"white"}
-            fontFamily={'"Josefin Sans", sans-serif'}
-            my={"1rem"}
-          >
+          <Button bg={"#b4c092"} color={"white"} fontFamily={font} my={"1rem"}>
             Confirmar asistencia
           </Button>
         </a>
         <HStack mt={"2rem"} justifyContent={"center"} alignItems={"center"}>
-          <GiAmpleDress color={"#406fa2"} size={"50px"} />{" "}
-          <MdBoy color={"#406fa2"} size={"70px"} />
+          <GiAmpleDress color={iconColor} size={"50px"} />{" "}
+          <MdBoy color={iconColor} size={"70px"} />
         </HStack>
         <Fade cascade direction="left">
           <Heading
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#194279"}
+            color={titleColor}
           >
             {drescode}
           </Heading>
           <Heading
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             size={"lg"}
-            color={"#406fa2"}
+            color={subColor}
           >
             {text}
           </Heading>
@@ -89,20 +90,20 @@ const EventAssistance = ({
           <Heading
             mt={5}
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
-            color={"#194279"}
+            color={titleColor}
           >
             {mujeres}
           </Heading>
           <Heading
             as={"h3"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={font}
             fontWeight={400}
             size={"lg"}
-            color={"#406fa2"}
+            color={subColor}
           >
             {prohibido}
           </Heading>

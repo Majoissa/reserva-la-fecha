@@ -1,7 +1,14 @@
 import { Box, Heading } from "@chakra-ui/react";
 import { Fade } from "react-awesome-reveal";
 
-const MainTexts = ({ title, subtitle }) => {
+const MainTexts = ({
+  title,
+  subtitle,
+  titleColor,
+  subColor,
+  titleFont,
+  subFont,
+}) => {
   return (
     <Box
       width={"100%"}
@@ -16,22 +23,17 @@ const MainTexts = ({ title, subtitle }) => {
       zIndex={3}
     >
       <Fade cascade direction="down" damping={0.5}>
-        <Heading
-          as="h1"
-          fontFamily={'"Parisienne", cursive'}
-          size={"3xl"}
-          color={"#194279"}
-        >
+        <Heading as="h1" fontFamily={titleFont} size={"3xl"} color={titleColor}>
           {title}
         </Heading>
         <Heading
           as={"h2"}
-          fontFamily={'"Josefin Sans", sans-serif'}
+          fontFamily={subFont}
           fontWeight={400}
           textTransform={"uppercase"}
           size={"lg"}
           mt={3}
-          color={"#406fa2"}
+          color={subColor}
         >
           {subtitle}
         </Heading>

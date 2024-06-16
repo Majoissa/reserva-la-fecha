@@ -3,10 +3,22 @@ import React from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 
-const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
+const SocialNetwork = ({
+  text,
+  description,
+  insta,
+  tags,
+  qr,
+  img,
+  url,
+  bgColor,
+  titleFont,
+  fontColor,
+  iconColor,
+}) => {
   return (
     <VStack
-      bg={"#e9e9e9"}
+      bg={bgColor}
       width={"100%"}
       height={"auto"}
       py="8rem"
@@ -20,53 +32,53 @@ const SocialNetwork = ({ text, description, insta, tags, qr, img, url }) => {
         <Fade>
           <Heading
             as={"h4"}
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={titleFont}
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#194279"}
+            color={fontColor}
             textTransform={"uppercase"}
           >
             {text}
           </Heading>
           <Text
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={titleFont}
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#406fa2"}
+            color={fontColor}
           >
             {description}
           </Text>
         </Fade>
       </Box>
-      <IoLogoInstagram fontSize={"50px"} color={"#194279"} />{" "}
+      <IoLogoInstagram fontSize={"50px"} color={iconColor} />{" "}
       <Fade>
         <Text
-          fontFamily={'"Josefin Sans", sans-serif'}
+          fontFamily={titleFont}
           fontWeight={400}
           size={"lg"}
           mt={3}
-          color={"#406fa2"}
+          color={fontColor}
         >
           {insta}
         </Text>
         <Text
-          fontFamily={'"Josefin Sans", sans-serif'}
+          fontFamily={titleFont}
           fontWeight={400}
           size={"lg"}
           mt={3}
-          color={"#406fa2"}
+          color={fontColor}
         >
           {tags}
         </Text>
         <Box maxW={{ base: "80%", md: "40%" }} margin={"auto"}>
           <Text
-            fontFamily={'"Josefin Sans", sans-serif'}
+            fontFamily={titleFont}
             fontWeight={400}
             size={"lg"}
             mt={3}
-            color={"#406fa2"}
+            color={fontColor}
           >
             {qr}
           </Text>

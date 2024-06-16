@@ -16,6 +16,9 @@ const EventLocation = ({
   horafiesta,
   ubi1,
   ubi2,
+  iconColor,
+  textColor,
+  font,
 }) => {
   return (
     <Box
@@ -40,41 +43,41 @@ const EventLocation = ({
               mb={"1rem"}
             >
               <Box ml={-7} mt={-9} mb={5}>
-                <FaMapPin color="#194279" fontSize={"25px"} />
+                <FaMapPin color={iconColor} fontSize={"25px"} />
               </Box>
               <Image mb={"1rem"} src={foto1} alt="Mar y Gonza" />
               <HStack>
-                <MdOutlineChurch fontSize={"45px"} color="#194279" />
+                <MdOutlineChurch fontSize={"45px"} color={iconColor} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {lugar}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegCalendarAlt color="#194279" fontSize={"25px"} />
+                <FaRegCalendarAlt color={iconColor} fontSize={"25px"} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {fecha}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegClock color="#194279" fontSize={"25px"} />
+                <FaRegClock color={iconColor} fontSize={"25px"} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {hora}
                 </Text>
@@ -82,11 +85,7 @@ const EventLocation = ({
             </Box>
           </Fade>
           <a href={ubi1} target="_blank" rel="noreferrer">
-            <Button
-              fontFamily={'"Josefin Sans", sans-serif'}
-              bg={"#b4c092"}
-              color={"white"}
-            >
+            <Button fontFamily={font} bg={"#b4c092"} color={"white"}>
               Ver ubicación
             </Button>
           </a>
@@ -103,41 +102,41 @@ const EventLocation = ({
               mb={"1rem"}
             >
               <Box ml={-7} mt={-9} mb={5}>
-                <FaMapPin color="#194279" fontSize={"25px"} />
+                <FaMapPin color={iconColor} fontSize={"25px"} />
               </Box>
               <Image mb={"1rem"} src={foto2} alt="Mar y Gonza" />
               <HStack>
-                <FaChampagneGlasses fontSize={"28px"} color="#194279" />
+                <FaChampagneGlasses fontSize={"28px"} color={iconColor} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {fiesta}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegCalendarAlt color="#194279" fontSize={"25px"} />
+                <FaRegCalendarAlt color={iconColor} fontSize={"25px"} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {fecha}
                 </Text>
               </HStack>
               <HStack>
-                <FaRegClock color="#194279" fontSize={"25px"} />
+                <FaRegClock color={iconColor} fontSize={"25px"} />
                 <Text
-                  fontFamily={'"Josefin Sans", sans-serif'}
+                  fontFamily={font}
                   fontWeight={400}
                   size={"lg"}
                   mt={3}
-                  color={"#406fa2"}
+                  color={textColor}
                 >
                   {horafiesta}
                 </Text>
@@ -145,11 +144,7 @@ const EventLocation = ({
             </Box>
           </Fade>
           <a href={ubi2} target="_blank" rel="noreferrer">
-            <Button
-              fontFamily={'"Josefin Sans", sans-serif'}
-              bg={"#b4c092"}
-              color={"white"}
-            >
+            <Button fontFamily={font} bg={"#b4c092"} color={"white"}>
               Ver ubicación
             </Button>
           </a>
