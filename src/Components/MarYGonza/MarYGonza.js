@@ -46,7 +46,7 @@ const MarYGonza = () => {
       />
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
-        confirm={"Confirma tu asistencia antes del 1/07/2024"}
+        confirm={"Confirma tu asistencia antes del 30/07/2024"}
         url={"https://forms.gle/UsPPDQSExwq1McaV9"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
