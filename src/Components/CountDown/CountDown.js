@@ -39,12 +39,7 @@ const CountdownTimer = ({ targetDate, color, font, titlefont }) => {
       fontFamily={font}
     >
       <VStack spacing={4}>
-        <Text
-          fontSize="3xl"
-          textTransform={"uppercase"}
-          fontWeight={"bold"}
-          fontFamily={titlefont}
-        >
+        <Text fontSize="3xl" fontWeight={"bold"} fontFamily={titlefont}>
           Faltan
         </Text>
         <CiClock2 fontSize={"70px"} />
