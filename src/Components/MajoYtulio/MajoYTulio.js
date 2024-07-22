@@ -10,6 +10,7 @@ import Footer from "../Footer/Footer";
 import { IoIosHeart } from "react-icons/io";
 import { BsCalendarHeart } from "react-icons/bs";
 import PhotoGrid from "../grid/PhotoGrid";
+import CountdownTimer from "../CountDown/CountDown";
 
 const MajoYTulio = () => {
   const img1 = require("./novios.jpeg");
@@ -45,6 +46,11 @@ const MajoYTulio = () => {
         praseColor={"#faffde"}
         font={'"Montserrat", sans-serif;'}
         icon={<IoIosHeart color="#faffde" size="40px" />}
+      />
+      <CountdownTimer
+        targetDate="2024-09-24T18:00:00"
+        color={"#3b5c54"}
+        font={'"Montserrat", sans-serif;'}
       />
       <EventLocation
         foto1={iglesia}
