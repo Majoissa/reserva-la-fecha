@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Box, Text, VStack, HStack } from "@chakra-ui/react";
 import { CiClock2 } from "react-icons/ci";
 
-const CountdownTimer = ({ targetDate, color, font }) => {
+const CountdownTimer = ({ targetDate, color, font, titlefont }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
@@ -39,7 +39,12 @@ const CountdownTimer = ({ targetDate, color, font }) => {
       fontFamily={font}
     >
       <VStack spacing={4}>
-        <Text fontSize="3xl" textTransform={"uppercase"} fontWeight={"bold"}>
+        <Text
+          fontSize="3xl"
+          textTransform={"uppercase"}
+          fontWeight={"bold"}
+          fontFamily={titlefont}
+        >
           Faltan
         </Text>
         <CiClock2 fontSize={"70px"} />

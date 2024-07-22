@@ -51,6 +51,7 @@ const MajoYTulio = () => {
         targetDate="2024-09-24T18:00:00"
         color={"#3b5c54"}
         font={'"Montserrat", sans-serif;'}
+        titlefont={'"Ms Madi", cursive;'}
       />
       <EventLocation
         foto1={iglesia}
