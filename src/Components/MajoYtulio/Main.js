@@ -7,7 +7,7 @@ const Main = () => {
   const background = require("./bg.png");
   return (
     <Box>
-      <MainImage src={background} />
+      <MainImage src="https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MajoYtulio/bg.png" />
       <MainTexts
         title="Majo y Tulio"
         subtitle="¡Nos casamos!"
