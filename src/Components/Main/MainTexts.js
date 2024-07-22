@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Image } from "@chakra-ui/react";
 import { Fade } from "react-awesome-reveal";
 
 const MainTexts = ({
@@ -8,6 +8,7 @@ const MainTexts = ({
   subColor,
   titleFont,
   subFont,
+  bgImage,
 }) => {
   return (
     <Box

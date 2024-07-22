@@ -4,15 +4,15 @@ import MainTexts from "../Main/MainTexts";
 import { Box } from "@chakra-ui/react";
 
 const Main = () => {
-  const background = require("./elemento-diseno-textura-fondo-blanco-blanco_53876-121632.jpg");
+  const background = require("./bg.png");
   return (
     <Box>
       <MainImage src={background} />
       <MainTexts
         title="Majo y Tulio"
         subtitle="¡Nos casamos!"
-        titleColor={"#9ba07e"}
-        subColor={"#6b7655"}
+        titleColor={"#3b5c54"}
+        subColor={"#3b5c54"}
         titleFont={'"Ms Madi", cursive;'}
         subFont={'"Montserrat", sans-serif;'}
       />
