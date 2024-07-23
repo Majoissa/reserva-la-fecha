@@ -17,7 +17,7 @@ const MajoYTulio = () => {
   const img2 = require("./novios2.jpeg");
   const qr = require("./majoytulioQr.png");
   const iglesia = require("./iglesia.jpg");
-  const salon = require("./salon.jpeg");
+  const salon = require("./florentina.jpeg");
   const fotos = [
     require("./foto1.jpeg"),
     require("./foto3.jpeg"),

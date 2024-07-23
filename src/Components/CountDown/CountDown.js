@@ -42,7 +42,7 @@ const CountdownTimer = ({ targetDate, color, font, titlefont }) => {
         <Text fontSize="4xl" fontWeight={"bold"} fontFamily={titlefont}>
           Faltan
         </Text>
-        <CiClock2 fontSize={"70px"} />
+        <CiClock2 fontSize={"70px"} color={color} />
         <HStack spacing={6}>
           <VStack>
             <Text fontSize="4xl">{timeLeft.days || "0"}</Text>
