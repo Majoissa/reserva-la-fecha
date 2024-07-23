@@ -18,16 +18,20 @@ const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
   return (
     <Box position="fixed" bottom="40px" right="40px" zIndex="1000">
       <Box position="relative">
-        <Box as={FaMusic} fontSize="60px" color={color} />
+        <Box
+          as={FaMusic}
+          fontSize={{ base: "40px", md: "60px" }}
+          color={color}
+        />
         <IconButton
           icon={isPlaying ? <FaPause /> : <FaPlay />}
           onClick={togglePlayPause}
           position="absolute"
           top="-15px"
-          left="35px"
+          left={{ base: "25px", md: "35px" }}
           zIndex="1001"
-          borderRadius="50%"
-          size="md"
+          borderRadius="100%"
+          fontSize={{ base: "sm", md: "md" }}
           backgroundColor={bgcolor}
           color={iconcolor}
         />
