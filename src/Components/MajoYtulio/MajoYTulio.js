@@ -11,6 +11,8 @@ import { IoIosHeart } from "react-icons/io";
 import { BsCalendarHeart } from "react-icons/bs";
 import PhotoGrid from "../grid/PhotoGrid";
 import CountdownTimer from "../CountDown/CountDown";
+import { CiClock2 } from "react-icons/ci";
+import FloatingButton from "../FloatingButton/FloatingButton";
 
 const MajoYTulio = () => {
   const img1 = require("./novios.jpeg");
@@ -37,6 +39,12 @@ const MajoYTulio = () => {
   ];
   return (
     <Box>
+      <FloatingButton
+        audioSrc="/hastamifinal.mp3"
+        bgcolor={"#63847b"}
+        color={"#3b5c54"}
+        iconcolor={"white"}
+      />
       <Main />
       <Motivation
         title="Queremos que seas parte de nuestro día"
@@ -52,6 +60,10 @@ const MajoYTulio = () => {
         color={"#3b5c54"}
         font={'"Montserrat", sans-serif;'}
         titlefont={'"Ms Madi", cursive;'}
+        cardBg={"#63847b"}
+        cardColor={"white"}
+        text={"Faltan"}
+        icon={<CiClock2 fontSize={"70px"} color={"#3b5c54"} />}
       />
       <EventLocation
         foto1={iglesia}

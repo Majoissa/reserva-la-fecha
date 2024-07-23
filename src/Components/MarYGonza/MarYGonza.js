@@ -9,6 +9,9 @@ import SocialNetwork from "../SocialNetworks/SocialNetworks";
 import Footer from "../Footer/Footer";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { GiLinkedRings } from "react-icons/gi";
+import CountdownTimer from "../CountDown/CountDown";
+import { PiClockDuotone } from "react-icons/pi";
+import FloatingButton from "../FloatingButton/FloatingButton";
 
 const MarYGonza = () => {
   const img1 = require("./novios.jpeg");
@@ -16,6 +19,12 @@ const MarYGonza = () => {
   const qr = require("./qrcode.png");
   return (
     <Box>
+      <FloatingButton
+        audioSrc="/primerasveces.mp3"
+        bgcolor={"#406fa2"}
+        color={"#194279"}
+        iconcolor={"white"}
+      />
       <Main />
       <Motivation
         title="Queremos que seas parte de nuestro día"
@@ -43,6 +52,16 @@ const MarYGonza = () => {
         iconColor={"#194279"}
         textColor={"#406fa2"}
         font={'"Josefin Sans", sans-serif'}
+      />
+      <CountdownTimer
+        targetDate="2024-08-17T18:00:00"
+        color={"#194279"}
+        font={'"Josefin Sans", sans-serif'}
+        titlefont={'"Josefin Sans", sans-serif'}
+        cardBg={"#eee2d3"}
+        cardColor={"#194279"}
+        text={"Cuenta regresiva"}
+        icon={<PiClockDuotone fontSize={"70px"} color={"#194279"} />}
       />
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}

@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Box, Text, VStack, HStack } from "@chakra-ui/react";
-import { CiClock2 } from "react-icons/ci";
 
-const CountdownTimer = ({ targetDate, color, font, titlefont }) => {
+const CountdownTimer = ({
+  targetDate,
+  color,
+  font,
+  titlefont,
+  cardBg,
+  cardColor,
+  text,
+  icon,
+}) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
@@ -40,25 +48,57 @@ const CountdownTimer = ({ targetDate, color, font, titlefont }) => {
     >
       <VStack spacing={4}>
         <Text fontSize="4xl" fontWeight={"bold"} fontFamily={titlefont}>
-          Faltan
+          {text}
         </Text>
-        <CiClock2 fontSize={"70px"} color={color} />
-        <HStack spacing={6}>
-          <VStack>
+        {icon}
+        <HStack spacing={2} pt={"15px"}>
+          <VStack
+            maxW={"75px"}
+            width={"70px"}
+            py={"10px"}
+            boxShadow={"1px 1px 4px 1px grey"}
+            borderRadius={"10px"}
+            bgColor={cardBg}
+            color={cardColor}
+          >
             <Text fontSize="4xl">{timeLeft.days || "0"}</Text>
-            <Text fontSize="xl">Días</Text>
+            <Text fontSize="lg">Días</Text>
           </VStack>
-          <VStack>
+          <VStack
+            maxW={"75px"}
+            width={"70px"}
+            py={"10px"}
+            boxShadow={"1px 1px 4px 1px grey"}
+            borderRadius={"10px"}
+            bgColor={cardBg}
+            color={cardColor}
+          >
             <Text fontSize="4xl">{timeLeft.hours || "0"}</Text>
-            <Text fontSize="xl">Horas</Text>
+            <Text fontSize="lg">Horas</Text>
           </VStack>
-          <VStack>
+          <VStack
+            maxW={"75px"}
+            width={"70px"}
+            py={"10px"}
+            boxShadow={"1px 1px 4px 1px grey"}
+            borderRadius={"10px"}
+            bgColor={cardBg}
+            color={cardColor}
+          >
             <Text fontSize="4xl">{timeLeft.minutes || "0"}</Text>
-            <Text fontSize="xl">Minutos</Text>
+            <Text fontSize="lg">Min.</Text>
           </VStack>
-          <VStack>
+          <VStack
+            maxW={"75px"}
+            width={"70px"}
+            py={"10px"}
+            boxShadow={"1px 1px 4px 1px grey"}
+            borderRadius={"10px"}
+            bgColor={cardBg}
+            color={cardColor}
+          >
             <Text fontSize="4xl">{timeLeft.seconds || "0"}</Text>
-            <Text fontSize="xl">Segundos</Text>
+            <Text fontSize="lg">Seg.</Text>
           </VStack>
         </HStack>
       </VStack>
