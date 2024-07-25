@@ -4,10 +4,10 @@ import MainTexts from "../Main/MainTexts";
 import { Box } from "@chakra-ui/react";
 
 const Main = () => {
-  const background = require("./bg.png");
+  const background = require("./bg.webp");
   return (
     <Box>
-      <MainImage src="https://raw.githubusercontent.com/Majoissa/reserva-la-fecha/main/src/Components/MajoYtulio/bg.png" />
+      <MainImage src={background} />
       <MainTexts
         title="Majo y Tulio"
         subtitle="¡Nos casamos!"
