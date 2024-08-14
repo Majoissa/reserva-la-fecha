@@ -81,7 +81,7 @@ const MajoYTulio = () => {
       />
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
-        confirm={"Confirma tu asistencia antes del 15/08/2024"}
+        confirm={"Confirma tu asistencia antes del 28/09/2024"}
         url={"https://forms.gle/yngR1MhuUrqkqHNK7"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
