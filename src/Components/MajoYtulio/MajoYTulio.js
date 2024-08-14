@@ -69,7 +69,7 @@ const MajoYTulio = () => {
         foto1={iglesia}
         foto2={salon}
         lugar={"Iglesia Ntra. Sra. de la Caridad"}
-        fecha={"28/09/2024"}
+        fecha={"28/08/2024"}
         hora={"18:00 hs."}
         fiesta={"Civil y Fiesta - salón Florentina"}
         horafiesta={"19:00 hs."}
