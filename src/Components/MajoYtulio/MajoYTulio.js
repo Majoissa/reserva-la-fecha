@@ -69,7 +69,7 @@ const MajoYTulio = () => {
         foto1={iglesia}
         foto2={salon}
         lugar={"Iglesia Ntra. Sra. de la Caridad"}
-        fecha={"28/08/2024"}
+        fecha={"28/09/2024"}
         hora={"18:00 hs."}
         fiesta={"Civil y Fiesta - salón Florentina"}
         horafiesta={"19:00 hs."}
@@ -81,7 +81,7 @@ const MajoYTulio = () => {
       />
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
-        confirm={"Confirma tu asistencia antes del 28/09/2024"}
+        confirm={"Confirma tu asistencia antes del 28/08/2024"}
         url={"https://forms.gle/yngR1MhuUrqkqHNK7"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
