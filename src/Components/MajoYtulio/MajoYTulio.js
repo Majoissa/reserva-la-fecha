@@ -81,7 +81,7 @@ const MajoYTulio = () => {
       />
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
-        confirm={"Confirma tu asistencia antes del 28/08/2024"}
+        confirm={"Confirma tu asistencia antes del 10/09/2024"}
         url={"https://forms.gle/yngR1MhuUrqkqHNK7"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
@@ -97,6 +97,8 @@ const MajoYTulio = () => {
         text={
           "Tu presencia es el regalo más importante para nosotros. Pero si deseas celebrar con un detalle adicional, puedes ayudarnos con nuestra Luna de Miel."
         }
+        text2={"CBU en ver más"}
+        text3={"Buzón en el salón"}
         color={"#474b2f"}
         titleColor={"#474b2f"}
         textColor={"#474b2f"}
