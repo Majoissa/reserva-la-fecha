@@ -77,7 +77,7 @@ const MarYGonza = () => {
       <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
         confirm={"Confirma tu asistencia antes del 20/01/2026"}
-        url={"https://forms.gle/UsPPDQSExwq1McaV9"}
+        url={"https://forms.gle/ZzZA7prYcMosn3wGA"}
         drescode={"Dresscode"}
         text={"Formal- elegante"}
         mujeres={"¡ATENCIÓN MUJERES!"}
@@ -95,8 +95,6 @@ const MarYGonza = () => {
         text={
           "Tu presencia es el regalo más importante para nosotros. Pero si deseas celebrar con un detalle adicional, puedes ayudarnos con nuestra Luna de Miel."
         }
-        text2={"CBU en ver más"}
-        text3={"Buzón en el salón"}
         color={"#d1b8a1"}
         titleColor={"#af9c8e"}
         textColor={"#af9c8e"}
