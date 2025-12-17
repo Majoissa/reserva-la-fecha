@@ -8,7 +8,7 @@ const Footer = ({ text, bgColor, font, colorFont }) => {
       height={"auto"}
       px={"2rem"}
       textAlign={"center"}
-      py={"4rem"}
+      py={"6rem"}
     >
       <Heading
         as={"h3"}

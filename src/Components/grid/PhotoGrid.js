@@ -11,7 +11,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const PhotoGrid = ({ fotos, bgColor }) => {
+const PhotoGrid = ({ fotos, bgColor, fontFamily, textColor }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -26,8 +26,8 @@ const PhotoGrid = ({ fotos, bgColor }) => {
         fontSize="40px"
         fontWeight="bold"
         mb={5}
-        color={"#9ba07e"}
-        fontFamily={'"Ms Madi", cursive;'}
+        color={textColor ? textColor : "#9ba07e"}
+        fontFamily={fontFamily ? fontFamily : '"Ms Madi", cursive;'}
       >
         Nosotros
       </Text>

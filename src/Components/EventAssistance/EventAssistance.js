@@ -57,7 +57,7 @@ const EventAssistance = ({
           </Heading>
         </Fade>
         <a href={url} target="_blank" rel="noreferrer">
-          <Button bg={"#b4c092"} color={"white"} fontFamily={font} my={"1rem"}>
+          <Button bg={iconColor} color={"white"} fontFamily={font} my={"1rem"}>
             Confirmar asistencia
           </Button>
         </a>
@@ -84,28 +84,6 @@ const EventAssistance = ({
             color={subColor}
           >
             {text}
-          </Heading>
-        </Fade>
-        <Fade cascade direction="left">
-          <Heading
-            mt={5}
-            as={"h3"}
-            fontFamily={font}
-            fontWeight={400}
-            textTransform={"uppercase"}
-            size={"lg"}
-            color={titleColor}
-          >
-            {mujeres}
-          </Heading>
-          <Heading
-            as={"h3"}
-            fontFamily={font}
-            fontWeight={400}
-            size={"lg"}
-            color={subColor}
-          >
-            {prohibido}
           </Heading>
         </Fade>
       </Box>

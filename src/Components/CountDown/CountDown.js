@@ -10,6 +10,7 @@ const CountdownTimer = ({
   cardColor,
   text,
   icon,
+  bgColor,
 }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
@@ -42,7 +43,7 @@ const CountdownTimer = ({
       textAlign="center"
       py={"150px"}
       px={6}
-      bgColor={"white"}
+      bgColor={bgColor ? bgColor : "White"}
       color={color}
       fontFamily={font}
     >

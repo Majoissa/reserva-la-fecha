@@ -23,7 +23,12 @@ const PresentPopup = ({
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button onClick={onOpen} fontFamily={font} bg={"#b4c092"} color={"white"}>
+      <Button
+        onClick={onOpen}
+        fontFamily={font}
+        bg={titleColor}
+        color={"white"}
+      >
         Ver más
       </Button>
 

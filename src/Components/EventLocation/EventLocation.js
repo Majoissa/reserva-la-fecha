@@ -22,7 +22,7 @@ const EventLocation = ({
 }) => {
   return (
     <Box
-      bg={"#e9e9e9"}
+      bg={"White"}
       width={"100%"}
       height={"auto"}
       py={"8rem"}
@@ -85,7 +85,7 @@ const EventLocation = ({
             </Box>
           </Fade>
           <a href={ubi1} target="_blank" rel="noreferrer">
-            <Button fontFamily={font} bg={"#b4c092"} color={"white"}>
+            <Button fontFamily={font} bg={iconColor} color={"white"}>
               Ver ubicación
             </Button>
           </a>
@@ -144,7 +144,7 @@ const EventLocation = ({
             </Box>
           </Fade>
           <a href={ubi2} target="_blank" rel="noreferrer">
-            <Button fontFamily={font} bg={"#b4c092"} color={"white"}>
+            <Button fontFamily={font} bg={iconColor} color={"white"}>
               Ver ubicación
             </Button>
           </a>
