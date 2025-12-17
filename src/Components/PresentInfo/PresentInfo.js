@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import PresentPopup from "./PresentPopup";
 
 const PresentInfo = ({
-  text, 
+  text,
   text2,
   text3,
   color,
@@ -39,31 +39,6 @@ const PresentInfo = ({
         >
           {text}
         </Heading>
-        <ul>
-          <li>
-          <Heading
-          as={"h3"}
-          fontFamily={font}
-          fontWeight={400}
-          size={"sm"}
-          color={color}
-        >
-          {text2}
-        </Heading>
-        </li>
-          <li>
-          <Heading
-          as={"h3"}
-          fontFamily={font}
-          fontWeight={400}
-          size={"sm"}
-          color={color}
-        >
-          {text3}
-        </Heading>
-        </li>
-        </ul>
-        
       </Fade>
       <PresentPopup
         titleColor={titleColor}
