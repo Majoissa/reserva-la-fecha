@@ -16,7 +16,7 @@ import PhotoGrid from "../grid/PhotoGrid";
 
 const MarYGonza = () => {
   const iglesia = require("./iglesia.jpg");
-  const salon = require("./salon.jpg");
+  const salon = require("./salon.jpeg");
   const qr = require("./qrcode.png");
   const fotos = [
     require("./novios.jpeg"),
@@ -41,7 +41,7 @@ const MarYGonza = () => {
       <Motivation
         title="Queremos que seas parte de nuestro día"
         phrase={
-          "No hay mejor compañía que la que estuvo en el camino para celebrar en la meta"
+          "No hay mejor compañía que la que estuvo en el camino para hacer este día inolvidable"
         }
         bgcolor={"#f3ebe6"}
         titleColor={"#af9c8e"}
@@ -53,7 +53,7 @@ const MarYGonza = () => {
         foto1={iglesia}
         foto2={salon}
         lugar={"Parroquia Nuestra Señora del Valle"}
-        fecha={"21/04/2026"}
+        fecha={"21/03/2026"}
         hora={"13:00 hs."}
         fiesta={"Civil y Fiesta - La Caballeriza"}
         horafiesta={"14:00 hs."}
