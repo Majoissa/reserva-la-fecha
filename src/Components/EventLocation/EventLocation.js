@@ -19,10 +19,11 @@ const EventLocation = ({
   iconColor,
   textColor,
   font,
+  bg
 }) => {
   return (
     <Box
-      bg={"White"}
+      bg={bg ? bg : "white"}
       width={"100%"}
       height={"auto"}
       py={"8rem"}

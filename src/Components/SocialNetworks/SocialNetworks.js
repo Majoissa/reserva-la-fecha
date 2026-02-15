@@ -86,7 +86,7 @@ const SocialNetwork = ({
       </Fade>
       <Image src={img} alt="codigo qr" width={"200px"} />
       <a href={url} target="_blank" rel="noreferrer">
-        <Button bg={"#b4c092"} color={"white"}>
+        <Button bg={iconColor} color={"white"}>
           Abrir álbum
         </Button>
       </a>
