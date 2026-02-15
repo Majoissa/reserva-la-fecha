@@ -1,5 +1,5 @@
 import { VStack, Heading, Box, Button, HStack } from "@chakra-ui/react";
-import { FaRegCalendarAlt } from "react-icons/fa";
+
 import { Fade } from "react-awesome-reveal";
 import { GiAmpleDress } from "react-icons/gi";
 import { MdBoy } from "react-icons/md";

@@ -1,4 +1,4 @@
-import { VStack, Heading, Box, Button, HStack } from "@chakra-ui/react";
+import { VStack, Heading } from "@chakra-ui/react";
 
 const Footer = ({ text, bgColor, font, colorFont }) => {
   return (
