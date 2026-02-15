@@ -18,8 +18,6 @@ const CeleYFer = () => {
   const salon = require("./CeleYFer2.jpeg");
  
   const couplePhoto = require("./novios.jpg");
-  
-  const fotos = [couplePhoto];
 
   return (
     <Box>
