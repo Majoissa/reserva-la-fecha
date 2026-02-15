@@ -15,7 +15,7 @@ import { CiClock2 } from "react-icons/ci";
 import FloatingButton from "../FloatingButton/FloatingButton";
 
 const CeleYFer = () => {
-  const qr = require("./qr_cele_fer.png");
+  const qrFoto = require("./qrcode.png");
   const iglesia = require("./CeleYfer.jpeg");
   const salon = require("./CeleYFer2.jpeg");
  
@@ -107,7 +107,7 @@ const CeleYFer = () => {
         qr={
           "Escaneá el código QR o presiona el botón y sube fotos y videos en nuestro álbum ♥"
         }
-        img={qr}
+        img={qrFoto}
         url={"https://drive.google.com/drive/u/5/folders/1zcaE_vPGRmNhiJGj8gwWok13aJ5HYB9z?q=sharedwith:public%20parent:1zcaE_vPGRmNhiJGj8gwWok13aJ5HYB9z"}
         bgColor={"#bee3f8"}
         titleFont={'"Montserrat", sans-serif;'}
