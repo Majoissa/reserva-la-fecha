@@ -5,7 +5,7 @@ import Motivation from "../Motivation/Motivation";
 import EventLocation from "../EventLocation/EventLocation";
 import EventAssistance from "../EventAssistance/EventAssistance";
 import PresentInfo from "../PresentInfo/PresentInfo";
-import SocialNetwork from "../SocialNetworks/SocialNetworks";
+
 import Footer from "../Footer/Footer";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { GiLinkedRings } from "react-icons/gi";
@@ -17,7 +17,7 @@ import PhotoGrid from "../grid/PhotoGrid";
 const MarYGonza = () => {
   const iglesia = require("./iglesia.jpg");
   const salon = require("./salon.jpeg");
-  const qr = require("./qrcode.png");
+
   const fotos = [
     require("./novios.jpeg"),
     require("./novios2.jpeg"),

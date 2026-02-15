@@ -14,9 +14,7 @@ import { PiClockDuotone } from "react-icons/pi";
 import FloatingButton from "../FloatingButton/FloatingButton";
 
 const MarYGonza = () => {
-  const img1 = require("./novios.jpeg");
-  const img2 = require("./novios2.jpeg");
-  const qr = require("./qrcode.png");
+
   return (
     <Box>
       <FloatingButton

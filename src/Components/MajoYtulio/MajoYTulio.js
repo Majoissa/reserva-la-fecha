@@ -15,8 +15,7 @@ import { CiClock2 } from "react-icons/ci";
 import FloatingButton from "../FloatingButton/FloatingButton";
 
 const MajoYTulio = () => {
-  const img1 = require("./novios.jpeg");
-  const img2 = require("./novios2.jpeg");
+
   const qr = require("./majoytulioQr.png");
   const iglesia = require("./iglesia.jpg");
   const salon = require("./florentina.jpeg");
