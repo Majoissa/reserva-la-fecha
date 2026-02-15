@@ -1,4 +1,3 @@
-import React from "react";
 import Main from "./Main";
 import { Box } from "@chakra-ui/react";
 import Motivation from "../Motivation/Motivation";
@@ -9,7 +8,6 @@ import SocialNetwork from "../SocialNetworks/SocialNetworks";
 import Footer from "../Footer/Footer";
 import { IoIosHeart } from "react-icons/io";
 import { BsCalendarHeart } from "react-icons/bs";
-import PhotoGrid from "../grid/PhotoGrid";
 import CountdownTimer from "../CountDown/CountDown";
 import { CiClock2 } from "react-icons/ci";
 import FloatingButton from "../FloatingButton/FloatingButton";
