@@ -17,8 +17,6 @@ const CeleYFer = () => {
   const iglesia = require("./CeleYfer.jpeg");
   const salon = require("./CeleYFer2.jpeg");
  
-
-
   return (
     <Box>
       <FloatingButton
