@@ -27,8 +27,8 @@ const CeleYFer = () => {
     <Box>
       <FloatingButton
         audioSrc="/celeyfer.mp3"
-        bgcolor={"#2c5282"}
-        color={"white"}
+        bgcolor={"#0C2A52"}
+        color={"#153e75"}
         iconcolor={"#bee3f8"}
       />
       <Main />
