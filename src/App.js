@@ -4,16 +4,20 @@ import MarYGonza from "./Components/MarYGonza/MarYGonza";
 import MajoYTulio from "./Components/MajoYtulio/MajoYTulio";
 import MartiYMatias from "./Components/MartiYMatias/MarYMatias";
 import CeleYFer from "./Components/CeleYFer/CeleYFer";
+import SofiaYBenjamin from "./Components/SofiaYBenjamin/SofiaYBenjamin";
+import Home from "./Components/Home/Home";
 import { Route } from "wouter";
 
 function App() {
   return (
     <ChakraProvider>
       <Box>
+        <Route path="/" component={Home} />
         <Route path="/Boda/MarYGonza" component={MarYGonza} />
         <Route path="/Boda/MajoYTulio" component={MajoYTulio} />
         <Route path="/Boda/MartiYMatias" component={MartiYMatias} />
         <Route path="/Boda/CeleYFer" component={CeleYFer} />
+        <Route path="/SofiaYBenja" component={SofiaYBenjamin} />
       </Box>
     </ChakraProvider>
   );

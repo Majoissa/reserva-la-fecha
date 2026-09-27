@@ -28,6 +28,8 @@ const PresentPopup = ({
         fontFamily={font}
         bg={titleColor}
         color={"white"}
+        borderRadius="full"
+        px={8}
       >
         Ver más
       </Button>

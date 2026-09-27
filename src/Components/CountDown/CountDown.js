@@ -57,8 +57,8 @@ const CountdownTimer = ({
             maxW={"75px"}
             width={"70px"}
             py={"10px"}
-            boxShadow={"1px 1px 4px 1px grey"}
-            borderRadius={"10px"}
+            boxShadow="md"
+            borderRadius="xl"
             bgColor={cardBg}
             color={cardColor}
           >
@@ -69,8 +69,8 @@ const CountdownTimer = ({
             maxW={"75px"}
             width={"70px"}
             py={"10px"}
-            boxShadow={"1px 1px 4px 1px grey"}
-            borderRadius={"10px"}
+            boxShadow="md"
+            borderRadius="xl"
             bgColor={cardBg}
             color={cardColor}
           >
@@ -81,8 +81,8 @@ const CountdownTimer = ({
             maxW={"75px"}
             width={"70px"}
             py={"10px"}
-            boxShadow={"1px 1px 4px 1px grey"}
-            borderRadius={"10px"}
+            boxShadow="md"
+            borderRadius="xl"
             bgColor={cardBg}
             color={cardColor}
           >
@@ -93,8 +93,8 @@ const CountdownTimer = ({
             maxW={"75px"}
             width={"70px"}
             py={"10px"}
-            boxShadow={"1px 1px 4px 1px grey"}
-            borderRadius={"10px"}
+            boxShadow="md"
+            borderRadius="xl"
             bgColor={cardBg}
             color={cardColor}
           >

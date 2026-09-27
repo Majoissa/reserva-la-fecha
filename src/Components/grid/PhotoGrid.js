@@ -35,8 +35,7 @@ const PhotoGrid = ({ fotos, bgColor, fontFamily, textColor }) => {
         {fotos.map((photo, index) => (
           <Box
             key={index}
-            border="2px solid white"
-            borderRadius="md"
+            borderRadius="xl"
             overflow="hidden"
             onClick={() => handleImageClick(photo)}
             cursor="pointer"

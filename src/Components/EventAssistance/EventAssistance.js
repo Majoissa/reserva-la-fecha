@@ -57,13 +57,13 @@ const EventAssistance = ({
           </Heading>
         </Fade>
         <a href={url} target="_blank" rel="noreferrer">
-          <Button bg={iconColor} color={"white"} fontFamily={font} my={"1rem"}>
+          <Button bg={iconColor} color={"white"} fontFamily={font} my={"1rem"} borderRadius="full" px={8}>
             Confirmar asistencia
           </Button>
         </a>
         <HStack mt={"2rem"} justifyContent={"center"} alignItems={"center"}>
-          <GiAmpleDress color={iconColor} size={"50px"} />{" "}
-          <MdBoy color={iconColor} size={"70px"} />
+          <GiAmpleDress color={iconColor} size={"40px"} opacity={0.8} />{" "}
+          <MdBoy color={iconColor} size={"45px"} opacity={0.8} />
         </HStack>
         <Fade cascade direction="left">
           <Heading
