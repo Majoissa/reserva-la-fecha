@@ -19,6 +19,7 @@ const PresentPopup = ({
   banco,
   cuil,
   font,
+  titleFont,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -38,7 +39,7 @@ const PresentPopup = ({
         <ModalOverlay />
         <ModalContent>
           <ModalHeader
-            fontFamily={font}
+            fontFamily={titleFont || font}
             fontWeight={400}
             size={"lg"}
             color={titleColor}

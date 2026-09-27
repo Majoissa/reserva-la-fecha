@@ -8,11 +8,11 @@ const Main = () => {
   const titleColor = "#4A0F61"; // Deep Purple
   const subColor = "#4A0F61"; // Deep Purple
   const titleFont = '"Parisienne", cursive';
-  const subFont = '"Montserrat", sans-serif';
+  const subFont = '"Raleway", sans-serif';
 
   return (
     <Box>
-      <MainImage src={fondo} />
+      <MainImage src={fondo} scrollable={true} />
       <Box
         width={"100%"}
         height={"100vh"}

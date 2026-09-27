@@ -8,6 +8,7 @@ const Motivation = ({
   titleColor,
   praseColor,
   font,
+  titleFont,
   icon,
 }) => {
   return (
@@ -29,7 +30,7 @@ const Motivation = ({
         <Fade cascade direction="down" damping={0.8}>
           <Heading
             as={"h3"}
-            fontFamily={font}
+            fontFamily={titleFont || font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}

@@ -19,6 +19,7 @@ const EventLocation = ({
   iconColor,
   textColor,
   font,
+  titleFont,
   bg,
   title1,
   title2
@@ -49,7 +50,7 @@ const EventLocation = ({
               <Box ml={-7} mt={-9} mb={5}>
                 <FaMapPin color={iconColor} fontSize={"20px"} opacity={0.8} />
               </Box>
-              {title1 && <Text fontFamily={font} fontSize="2xl" fontWeight="bold" color={textColor} mb={4} textAlign="left" textTransform="uppercase">{title1}</Text>}
+              {title1 && <Text fontFamily={titleFont || font} fontSize="2xl" fontWeight="bold" color={textColor} mb={4} textAlign="left" textTransform="uppercase">{title1}</Text>}
               {foto1 && <Image mb={"1rem"} src={foto1} alt="Boda" />}
               <Flex alignItems="flex-start" gap={3} mb={3}>
                 <MdOutlineChurch fontSize={"40px"} color={iconColor} opacity={0.8} mt={"2px"} />
@@ -113,7 +114,7 @@ const EventLocation = ({
               <Box ml={-7} mt={-9} mb={5}>
                 <FaMapPin color={iconColor} fontSize={"20px"} opacity={0.8} />
               </Box>
-              {title2 && <Text fontFamily={font} fontSize="2xl" fontWeight="bold" color={textColor} mb={4} textAlign="left" textTransform="uppercase">{title2}</Text>}
+              {title2 && <Text fontFamily={titleFont || font} fontSize="2xl" fontWeight="bold" color={textColor} mb={4} textAlign="left" textTransform="uppercase">{title2}</Text>}
               {foto2 && <Image mb={"1rem"} src={foto2} alt="Boda" />}
               <Flex alignItems="flex-start" gap={3} mb={3}>
                 <FaChampagneGlasses fontSize={"24px"} color={iconColor} opacity={0.8} mt={"2px"} />

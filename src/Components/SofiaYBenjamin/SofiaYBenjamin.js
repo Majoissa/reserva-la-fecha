@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./Main";
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import Motivation from "../Motivation/Motivation";
 import EventLocation from "../EventLocation/EventLocation";
 import EventAssistance from "../EventAssistance/EventAssistance";
@@ -13,6 +13,8 @@ import { PiClockDuotone } from "react-icons/pi";
 import FloatingButton from "../FloatingButton/FloatingButton";
 import PhotoGrid from "../grid/PhotoGrid";
 import ordinaryMusic from "./ordinary.mp3";
+import alianzasImg from "./alianzas.jpeg";
+import FallingFlowers from "./FallingFlowers";
 
 const fotosNosotros = [
   require('./1.jpeg'), require('./2.jpeg'), require('./3.jpeg'), require('./4.jpeg'),
@@ -33,15 +35,21 @@ const SofiaYBenjamin = () => {
         iconcolor={"white"}
       />
       <Main />
-      <Motivation
-        title="Queremos que seas parte de nuestro día"
-        phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
-        bgcolor={"white"}
-        titleColor={"#4A0F61"}
-        praseColor={"#4A0F61"}
-        font={'"Montserrat", sans-serif'}
-        icon={<GiLinkedRings color="#8C2155" size="35px" opacity={0.8} />}
-      />
+      <Box position="relative">
+        <FallingFlowers count={4} />
+        <Motivation
+          title="Queremos que seas parte de nuestro día"
+          phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
+          bgcolor={"white"}
+          titleColor={"#4A0F61"}
+          praseColor={"#4A0F61"}
+          font={'"Lato", sans-serif'}
+          titleFont={'"Raleway", sans-serif'}
+          icon={<Image src={alianzasImg} alt="Alianzas" w="80px" opacity={0.8} />}
+        />
+      </Box>
+      <Box position="relative">
+        <FallingFlowers count={6} />
       <EventLocation
         title1={"Misa"}
         title2={"Fiesta y civil"}
@@ -54,29 +62,36 @@ const SofiaYBenjamin = () => {
         ubi2={"https://share.google/aFWwwCU67r7dz380Q"}
         iconColor={"#8C2155"}
         textColor={"#4A0F61"}
-        font={'"Montserrat", sans-serif'}
+        font={'"Lato", sans-serif'}
+        titleFont={'"Raleway", sans-serif'}
         bg={"white"}
       />
-      <CountdownTimer
+      </Box>
+      <Box position="relative">
+        <FallingFlowers count={4} />
+        <CountdownTimer
         targetDate="2026-11-21T17:45:00"
         color={"#4A0F61"}
-        font={'"Montserrat", sans-serif'}
-        titlefont={'"Montserrat", sans-serif'}
+        font={'"Lato", sans-serif'}
+        titlefont={'"Raleway", sans-serif'}
         cardBg={"white"}
         cardColor={"#4A0F61"}
         text={"Cuenta regresiva"}
         icon={<PiClockDuotone fontSize={"45px"} color={"#8C2155"} opacity={0.8} />}
       />
+      </Box>
       <PhotoGrid
         fotos={fotosNosotros}
         bgColor={"white"}
-        fontFamily={'"Montserrat", sans-serif'}
+        fontFamily={'"Raleway", sans-serif'}
         textColor={"#4A0F61"}
       />
-      <EventAssistance
+      <Box position="relative">
+        <FallingFlowers count={5} />
+        <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
         confirm={"Confirma tu asistencia"}
-        url={"https://forms.gle/UsPPDQSExwq1McaV9"}
+        url={"https://docs.google.com/forms/d/e/1FAIpQLSdOrxwQMk_xs3JBaHAiv372Eh84ca4_qO7SxGPKQ5U46TK07Q/viewform?pli=1"}
         drescode={"Dresscode"}
         text={"Formal - elegante"}
         mujeres={"¡ATENCIÓN MUJERES!"}
@@ -87,10 +102,14 @@ const SofiaYBenjamin = () => {
         iconColor={"#8C2155"}
         titleColor={"#4A0F61"}
         subColor={"#4A0F61"}
-        font={'"Montserrat", sans-serif'}
+        font={'"Lato", sans-serif'}
+        titleFont={'"Raleway", sans-serif'}
         icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
       />
-      <PresentInfo
+      </Box>
+      <Box position="relative">
+        <FallingFlowers count={4} />
+        <PresentInfo
         text={
           "Tu presencia es el regalo más importante para nosotros. Pero si deseas celebrar con un detalle adicional, puedes ayudarnos con nuestra Luna de Miel."
         }
@@ -102,14 +121,16 @@ const SofiaYBenjamin = () => {
         alias={"Alias: sofi.benja.2026"}
         banco={"Naranja X - Titular: Oscar Benjamin Villafane Assef"}
         cuil={"CUIL: 20405330378"}
-        font={'"Montserrat", sans-serif'}
+        font={'"Lato", sans-serif'}
+        titleFont={'"Raleway", sans-serif'}
       />
+      </Box>
       <Footer
         text={
           "¡Estamos muy agradecidos por compartir con ustedes este momento tan especial!"
         }
         bgColor={"#8C2155"}
-        font={'"Montserrat", sans-serif'}
+        font={'"Lato", sans-serif'}
         colorFont={"white"}
       />
     </Box>

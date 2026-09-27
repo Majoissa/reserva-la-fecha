@@ -1,0 +1,32 @@
+.falling-flowers-container {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100vh);
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1; /* Above the white background */
+}
+
+.falling-flower {
+  position: absolute;
+  opacity: 0; /* Start hidden before delay */
+  animation-name: fall;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50vh) rotate(-45deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) rotate(15deg);
+    opacity: 0.8;
+  }
+}

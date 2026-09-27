@@ -1,7 +1,7 @@
 import { Image, Box } from "@chakra-ui/react";
 import React from "react";
 
-const MainImage = ({ src }) => {
+const MainImage = ({ src, scrollable }) => {
   return (
     <Box w={"100vw"}>
       <Image
@@ -11,7 +11,7 @@ const MainImage = ({ src }) => {
         width={"100%"}
         height={"100vh"}
         zIndex={-5}
-        position={"fixed"}
+        position={scrollable ? "absolute" : "fixed"}
       />
     </Box>
   );

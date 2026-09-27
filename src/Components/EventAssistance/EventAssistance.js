@@ -17,6 +17,7 @@ const EventAssistance = ({
   titleColor,
   subColor,
   font,
+  titleFont,
   icon,
 }) => {
   return (
@@ -38,7 +39,7 @@ const EventAssistance = ({
         <Fade cascade direction="left">
           <Heading
             as={"h3"}
-            fontFamily={font}
+            fontFamily={titleFont || font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}
@@ -68,7 +69,7 @@ const EventAssistance = ({
         <Fade cascade direction="left">
           <Heading
             as={"h3"}
-            fontFamily={font}
+            fontFamily={titleFont || font}
             fontWeight={400}
             textTransform={"uppercase"}
             size={"lg"}

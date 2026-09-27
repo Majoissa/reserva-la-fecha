@@ -15,6 +15,7 @@ const PresentInfo = ({
   banco,
   cuil,
   font,
+  titleFont,
 }) => {
   return (
     <VStack
@@ -49,6 +50,7 @@ const PresentInfo = ({
         banco={banco}
         cuil={cuil}
         font={font}
+        titleFont={titleFont}
       />
     </VStack>
   );
