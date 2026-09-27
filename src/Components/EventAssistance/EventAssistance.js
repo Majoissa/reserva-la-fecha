@@ -24,7 +24,7 @@ const EventAssistance = ({
     <VStack bg={bgColor} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
-        maxW={{ base: "100%", sm: "70%", md: "40%" }}
+        maxW={{ base: "80%", sm: "60%", md: "35%" }}
         margin={"auto"}
       >
         <Box

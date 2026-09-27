@@ -30,7 +30,7 @@ const FallingFlowers = ({ count = 6 }) => {
   }, [count]);
 
   return (
-    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 0, overflow: "hidden" }}>
+    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 2, overflow: "hidden" }}>
       {flowers.map((flower) => (
         <div 
           key={flower.id} 

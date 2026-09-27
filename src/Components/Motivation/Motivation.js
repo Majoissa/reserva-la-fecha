@@ -15,7 +15,7 @@ const Motivation = ({
     <VStack bg={bgcolor} width={"100%"} height={"100vh"} px={"2rem"}>
       <Box
         textAlign={"center"}
-        maxW={{ base: "100%", sm: "70%", md: "40%" }}
+        maxW={{ base: "80%", sm: "60%", md: "35%" }}
         margin={"auto"}
       >
         <Box
@@ -28,16 +28,18 @@ const Motivation = ({
           {icon}
         </Box>
         <Fade cascade direction="down" damping={0.8}>
-          <Heading
-            as={"h3"}
-            fontFamily={titleFont || font}
-            fontWeight={400}
-            textTransform={"uppercase"}
-            size={"lg"}
-            color={titleColor}
-          >
-            {title}
-          </Heading>
+          {title && (
+            <Heading
+              as={"h3"}
+              fontFamily={titleFont || font}
+              fontWeight={400}
+              textTransform={"uppercase"}
+              size={"lg"}
+              color={titleColor}
+            >
+              {title}
+            </Heading>
+          )}
           <Heading
             as={"h3"}
             fontFamily={font}
