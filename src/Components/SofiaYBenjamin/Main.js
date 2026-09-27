@@ -28,18 +28,17 @@ const Main = () => {
       >
         <Fade cascade direction="down" damping={0.5}>
           <Heading as="h1" fontFamily={titleFont} size={"3xl"} color={titleColor} mb={6}>
-            Sofia y Benjamin
+            Sofia & <br /> Benjamin
           </Heading>
 
           <Heading
             as={"h2"}
             fontFamily={subFont}
             fontWeight={400}
-            textTransform={"uppercase"}
             size={"lg"}
             color={subColor}
           >
-            ¡Nos casamos!
+            Nos casamos
           </Heading>
         </Fade>
       </Box>

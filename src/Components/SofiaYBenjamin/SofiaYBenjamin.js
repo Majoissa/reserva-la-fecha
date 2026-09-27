@@ -35,21 +35,24 @@ const SofiaYBenjamin = () => {
         iconcolor={"white"}
       />
       <Main />
-      <Box position="relative">
+      <Box position="relative" bg="white" py={4}>
         <FallingFlowers count={4} />
-        <Motivation
-          title="Queremos que seas parte de nuestro día"
-          phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
-          bgcolor={"white"}
+        <Box position="relative" zIndex={1}>
+          <Motivation
+            title="Queremos que seas parte de nuestro día"
+            phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
+            bgcolor={"transparent"}
           titleColor={"#4A0F61"}
           praseColor={"#4A0F61"}
           font={'"Lato", sans-serif'}
           titleFont={'"Raleway", sans-serif'}
-          icon={<Image src={alianzasImg} alt="Alianzas" w="80px" opacity={0.8} />}
+          icon={<Image src={alianzasImg} alt="Alianzas" w="120px" opacity={0.8} />}
         />
+        </Box>
       </Box>
-      <Box position="relative">
+      <Box position="relative" bg="white" py={4}>
         <FallingFlowers count={6} />
+        <Box position="relative" zIndex={1}>
       <EventLocation
         title1={"Misa"}
         title2={"Fiesta y civil"}
@@ -64,11 +67,13 @@ const SofiaYBenjamin = () => {
         textColor={"#4A0F61"}
         font={'"Lato", sans-serif'}
         titleFont={'"Raleway", sans-serif'}
-        bg={"white"}
+        bg={"transparent"}
       />
+        </Box>
       </Box>
-      <Box position="relative">
+      <Box position="relative" py={4}>
         <FallingFlowers count={4} />
+        <Box position="relative" zIndex={1}>
         <CountdownTimer
         targetDate="2026-11-21T17:45:00"
         color={"#4A0F61"}
@@ -79,6 +84,7 @@ const SofiaYBenjamin = () => {
         text={"Cuenta regresiva"}
         icon={<PiClockDuotone fontSize={"45px"} color={"#8C2155"} opacity={0.8} />}
       />
+        </Box>
       </Box>
       <PhotoGrid
         fotos={fotosNosotros}
@@ -86,8 +92,9 @@ const SofiaYBenjamin = () => {
         fontFamily={'"Raleway", sans-serif'}
         textColor={"#4A0F61"}
       />
-      <Box position="relative">
+      <Box position="relative" bg="white" py={4}>
         <FallingFlowers count={5} />
+        <Box position="relative" zIndex={1}>
         <EventAssistance
         phrase={"¡Esperamos poder contar con tu presencia!"}
         confirm={"Confirma tu asistencia"}
@@ -106,9 +113,11 @@ const SofiaYBenjamin = () => {
         titleFont={'"Raleway", sans-serif'}
         icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
       />
+        </Box>
       </Box>
-      <Box position="relative">
+      <Box position="relative" bg="white" py={4}>
         <FallingFlowers count={4} />
+        <Box position="relative" zIndex={1}>
         <PresentInfo
         text={
           "Tu presencia es el regalo más importante para nosotros. Pero si deseas celebrar con un detalle adicional, puedes ayudarnos con nuestra Luna de Miel."
@@ -124,6 +133,7 @@ const SofiaYBenjamin = () => {
         font={'"Lato", sans-serif'}
         titleFont={'"Raleway", sans-serif'}
       />
+        </Box>
       </Box>
       <Footer
         text={

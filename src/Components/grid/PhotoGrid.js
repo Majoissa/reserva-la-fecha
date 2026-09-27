@@ -9,15 +9,46 @@ import {
   ModalContent,
   ModalBody,
   useDisclosure,
+  IconButton,
+  Flex
 } from "@chakra-ui/react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const PhotoGrid = ({ fotos, bgColor, fontFamily, textColor }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const minSwipeDistance = 50;
 
-  const handleImageClick = (photo) => {
-    setSelectedImage(photo);
+  const handleImageClick = (index) => {
+    setCurrentIndex(index);
     onOpen();
+  };
+
+  const handlePrev = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? fotos.length - 1 : prev - 1));
+  };
+
+  const handleNext = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev === fotos.length - 1 ? 0 : prev + 1));
+  };
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    if (distance > minSwipeDistance) handleNext();
+    if (distance < -minSwipeDistance) handlePrev();
   };
 
   return (
@@ -37,7 +68,7 @@ const PhotoGrid = ({ fotos, bgColor, fontFamily, textColor }) => {
             key={index}
             borderRadius="xl"
             overflow="hidden"
-            onClick={() => handleImageClick(photo)}
+            onClick={() => handleImageClick(index)}
             cursor="pointer"
           >
             <Image
@@ -50,11 +81,53 @@ const PhotoGrid = ({ fotos, bgColor, fontFamily, textColor }) => {
           </Box>
         ))}
       </SimpleGrid>
-      <Modal isOpen={isOpen} onClose={onClose} isCentered>
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size="xl">
         <ModalOverlay />
-        <ModalContent maxW="80%" bg="transparent" boxShadow="none">
-          <ModalBody p={0}>
-            <Image src={selectedImage} alt="Selected" borderRadius="md" />
+        <ModalContent maxW="90%" bg="transparent" boxShadow="none" position="relative">
+          <ModalBody 
+            p={0} 
+            display="flex" 
+            alignItems="center" 
+            justifyContent="center"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            {currentIndex !== null && (
+              <Flex position="relative" alignItems="center" justifyContent="center">
+                <IconButton
+                  icon={<FaChevronLeft />}
+                  position="absolute"
+                  left="-4"
+                  zIndex={2}
+                  onClick={handlePrev}
+                  borderRadius="full"
+                  bg="whiteAlpha.800"
+                  _hover={{ bg: "white" }}
+                  aria-label="Previous image"
+                />
+                
+                <Image 
+                  src={fotos[currentIndex]} 
+                  alt="Selected" 
+                  borderRadius="md" 
+                  maxH="80vh"
+                  objectFit="contain"
+                />
+                
+                <IconButton
+                  icon={<FaChevronRight />}
+                  position="absolute"
+                  right="-4"
+                  zIndex={2}
+                  onClick={handleNext}
+                  borderRadius="full"
+                  bg="whiteAlpha.800"
+                  _hover={{ bg: "white" }}
+                  aria-label="Next image"
+                />
+              </Flex>
+            )}
           </ModalBody>
         </ModalContent>
       </Modal>

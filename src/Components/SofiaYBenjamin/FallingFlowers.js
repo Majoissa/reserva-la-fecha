@@ -15,19 +15,22 @@ const FallingFlowers = ({ count = 6 }) => {
       // Calculate top percentage with a small padding so it doesn't clip top/bottom
       const topPos = 5 + (90 / count) * i;
       
+      // Cycle 0,1,2,3 for left and 2,3,0,1 for right to avoid consecutive repeats
+      const imgIndex = (Math.floor(i / 2) + (isLeft ? 0 : 2)) % flowerImages.length;
+      
       return {
         id: i,
-        src: flowerImages[i % flowerImages.length],
+        src: flowerImages[imgIndex],
         isLeft,
         top: `${topPos}%`,
-        width: "50px", // Uniform size
-        delay: (i % 2) * 200 // Slight stagger delay
+        width: "30px", // Smaller size
+        delay: (i % 2) * 200
       };
     });
   }, [count]);
 
   return (
-    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 1, overflow: "hidden" }}>
+    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 0, overflow: "hidden" }}>
       {flowers.map((flower) => (
         <div 
           key={flower.id} 
