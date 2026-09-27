@@ -7,7 +7,7 @@ import EventAssistance from "../EventAssistance/EventAssistance";
 import PresentInfo from "../PresentInfo/PresentInfo";
 import Footer from "../Footer/Footer";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { GiLinkedRings } from "react-icons/gi";
+
 import CountdownTimer from "../CountDown/CountDown";
 import { PiClockDuotone } from "react-icons/pi";
 import FloatingButton from "../FloatingButton/FloatingButton";
