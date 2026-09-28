@@ -120,7 +120,6 @@ const SofiaYBenjamin = () => {
         icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
       />
         </Box>
-        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
       </Box>
       <Box position="relative" bgImage={`url('${fondo}')`} bgSize="cover" bgPosition="center" py={4}>
         <Box position="relative" zIndex={1}>
