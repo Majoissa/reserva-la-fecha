@@ -13,7 +13,7 @@ const Motivation = ({
   bottomImage,
 }) => {
   return (
-    <VStack bg={bgcolor} width={"100%"} height={"100vh"} px={"2rem"}>
+    <VStack bg={bgcolor} width={"100%"} py={{ base: "4rem", md: "6rem" }} px={"2rem"}>
       <Box
         textAlign={"center"}
         maxW={{ base: "80%", sm: "60%", md: "35%" }}

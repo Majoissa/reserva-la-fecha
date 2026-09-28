@@ -41,7 +41,7 @@ const CountdownTimer = ({
   return (
     <Box
       textAlign="center"
-      py={"150px"}
+      py={{ base: "4rem", md: "6rem" }}
       px={6}
       bgColor={bgColor ? bgColor : "White"}
       color={color}
