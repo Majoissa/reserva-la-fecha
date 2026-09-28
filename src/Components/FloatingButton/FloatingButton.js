@@ -4,19 +4,21 @@ import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
 
 const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audio] = useState(() => new Audio(audioSrc));
+  const [audio, setAudio] = useState(null);
   const hasInteracted = useRef(false);
 
   React.useEffect(() => {
-    audio.loop = true;
+    const newAudio = new Audio(audioSrc);
+    newAudio.loop = true;
+    setAudio(newAudio);
 
     const tryPlay = () => {
       if (!hasInteracted.current) {
-        audio.play().then(() => {
+        newAudio.play().then(() => {
           setIsPlaying(true);
           hasInteracted.current = true;
           removeListeners();
-        }).catch(e => console.log("Autoplay blocked, waiting for interaction"));
+        }).catch(e => console.log("Autoplay blocked", e));
       }
     };
 
@@ -38,18 +40,20 @@ const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
 
     return () => {
       removeListeners();
-      audio.pause();
+      newAudio.pause();
     };
-  }, []);
+  }, [audioSrc]);
 
   const togglePlayPause = () => {
-    hasInteracted.current = true; // Manual control overrides auto
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play().catch(e => console.log("Play failed", e));
+    hasInteracted.current = true; 
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play().catch(e => console.log("Play failed", e));
+      }
+      setIsPlaying(!isPlaying);
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
