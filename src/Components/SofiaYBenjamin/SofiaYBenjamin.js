@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./Main";
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Divider } from "@chakra-ui/react";
 import Motivation from "../Motivation/Motivation";
 import EventLocation from "../EventLocation/EventLocation";
 import EventAssistance from "../EventAssistance/EventAssistance";
@@ -51,6 +51,7 @@ const SofiaYBenjamin = () => {
           bottomImage={<Image src={ramoImg} alt="Ramo" w={{ base: "60%", md: "50%" }} transform="rotate(-15deg)" opacity={0.9} />}
         />
         </Box>
+        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
       </Box>
       <Box position="relative" bg="white" py={4}>
         <Box position="relative" zIndex={1}>
@@ -71,6 +72,7 @@ const SofiaYBenjamin = () => {
         bg={"transparent"}
       />
         </Box>
+        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
       </Box>
       <Box position="relative" py={4}>
         <FallingFlowers count={4} />
@@ -86,6 +88,7 @@ const SofiaYBenjamin = () => {
         icon={<PiClockDuotone fontSize={"45px"} color={"#8C2155"} opacity={0.8} />}
       />
         </Box>
+        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
       </Box>
       <PhotoGrid
         fotos={fotosNosotros}
@@ -93,6 +96,9 @@ const SofiaYBenjamin = () => {
         fontFamily={'"Raleway", sans-serif'}
         textColor={"#4A0F61"}
       />
+      <Box bg="white" w="100%">
+        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" />
+      </Box>
       <Box position="relative" bg="white" py={4}>
         <FallingFlowers count={5} />
         <Box position="relative" zIndex={1}>
@@ -115,6 +121,7 @@ const SofiaYBenjamin = () => {
         icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
       />
         </Box>
+        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
       </Box>
       <Box position="relative" bgImage={`url('${fondo}')`} bgSize="cover" bgPosition="center" py={4}>
         <Box position="relative" zIndex={1}>

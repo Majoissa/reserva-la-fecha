@@ -20,7 +20,7 @@ const PresentInfo = ({
   return (
     <VStack
       width={{ base: "70%", md: "35%" }}
-      py={{ base: "4rem", md: "6rem" }}
+      height={"100vh"}
       margin={"auto"}
       textAlign={"center"}
       bg={"transparent"}
