@@ -38,7 +38,6 @@ const SofiaYBenjamin = () => {
       />
       <Main />
       <Box position="relative" bg="white" py={4}>
-        <FallingFlowers count={4} />
         <Box position="relative" zIndex={1}>
           <Motivation
             phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
