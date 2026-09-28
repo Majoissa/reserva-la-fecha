@@ -14,7 +14,9 @@ import FloatingButton from "../FloatingButton/FloatingButton";
 import PhotoGrid from "../grid/PhotoGrid";
 import ordinaryMusic from "./ordinary.mp3";
 import alianzasImg from "./alianzas.jpeg";
+import ramoImg from "./ramo.PNG";
 import FallingFlowers from "./FallingFlowers";
+import fondo from "./fondo sofia.jpeg";
 
 const fotosNosotros = [
   require('./1.jpeg'), require('./2.jpeg'), require('./3.jpeg'), require('./4.jpeg'),
@@ -46,11 +48,11 @@ const SofiaYBenjamin = () => {
           font={'"Lato", sans-serif'}
           titleFont={'"Raleway", sans-serif'}
           icon={<Image src={alianzasImg} alt="Alianzas" w="120px" opacity={0.8} />}
+          bottomImage={<Image src={ramoImg} alt="Ramo" w={{ base: "60%", md: "50%" }} transform="rotate(-15deg)" opacity={0.9} />}
         />
         </Box>
       </Box>
       <Box position="relative" bg="white" py={4}>
-        <FallingFlowers count={6} />
         <Box position="relative" zIndex={1}>
       <EventLocation
         title1={"Misa"}
@@ -114,8 +116,7 @@ const SofiaYBenjamin = () => {
       />
         </Box>
       </Box>
-      <Box position="relative" bg="white" py={4}>
-        <FallingFlowers count={4} />
+      <Box position="relative" bgImage={`url('${fondo}')`} bgSize="cover" bgPosition="center" py={4}>
         <Box position="relative" zIndex={1}>
         <PresentInfo
         text={

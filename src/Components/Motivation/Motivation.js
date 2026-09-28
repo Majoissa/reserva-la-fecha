@@ -10,6 +10,7 @@ const Motivation = ({
   font,
   titleFont,
   icon,
+  bottomImage,
 }) => {
   return (
     <VStack bg={bgcolor} width={"100%"} height={"100vh"} px={"2rem"}>
@@ -50,6 +51,11 @@ const Motivation = ({
             {phrase}
           </Heading>
         </Fade>
+        {bottomImage && (
+          <Box display="flex" justifyContent="center" mt="2rem">
+            {bottomImage}
+          </Box>
+        )}
       </Box>
     </VStack>
   );

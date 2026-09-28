@@ -4,11 +4,10 @@ import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
 
 const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(new Audio(audioSrc));
+  const [audio] = useState(() => new Audio(audioSrc));
   const hasInteracted = useRef(false);
 
   React.useEffect(() => {
-    const audio = audioRef.current;
     audio.loop = true;
 
     const tryPlay = () => {
@@ -46,9 +45,9 @@ const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
   const togglePlayPause = () => {
     hasInteracted.current = true; // Manual control overrides auto
     if (isPlaying) {
-      audioRef.current.pause();
+      audio.pause();
     } else {
-      audioRef.current.play();
+      audio.play().catch(e => console.log("Play failed", e));
     }
     setIsPlaying(!isPlaying);
   };
