@@ -8,11 +8,12 @@ const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
   const hasInteracted = useRef(false);
 
   React.useEffect(() => {
-    audioRef.current.loop = true;
+    const audio = audioRef.current;
+    audio.loop = true;
 
     const tryPlay = () => {
       if (!hasInteracted.current) {
-        audioRef.current.play().then(() => {
+        audio.play().then(() => {
           setIsPlaying(true);
           hasInteracted.current = true;
           removeListeners();
@@ -38,7 +39,7 @@ const FloatingButton = ({ audioSrc, color, bgcolor, iconcolor }) => {
 
     return () => {
       removeListeners();
-      audioRef.current.pause();
+      audio.pause();
     };
   }, []);
 
