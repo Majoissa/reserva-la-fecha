@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./Main";
-import { Box, Image, Divider } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import Motivation from "../Motivation/Motivation";
 import EventLocation from "../EventLocation/EventLocation";
 import EventAssistance from "../EventAssistance/EventAssistance";
@@ -9,7 +9,6 @@ import Footer from "../Footer/Footer";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 import CountdownTimer from "../CountDown/CountDown";
-import { PiClockDuotone } from "react-icons/pi";
 import FloatingButton from "../FloatingButton/FloatingButton";
 import PhotoGrid from "../grid/PhotoGrid";
 import ordinaryMusic from "./ordinary.mp3";
