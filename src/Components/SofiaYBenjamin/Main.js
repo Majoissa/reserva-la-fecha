@@ -7,8 +7,8 @@ import fondo from "./fondo sofia.jpeg";
 const Main = () => {
   const titleColor = "#4A0F61"; // Deep Purple
   const subColor = "#4A0F61"; // Deep Purple
-  const titleFont = '"Parisienne", cursive';
-  const subFont = '"Raleway", sans-serif';
+  const titleFont = '"Alex Brush", cursive';
+  const subFont = '"Quicksand", sans-serif';
 
   return (
     <Box>
@@ -28,7 +28,7 @@ const Main = () => {
       >
         <Fade cascade direction="down" damping={0.5}>
           <Heading as="h1" fontFamily={titleFont} size={"3xl"} color={titleColor} mb={6}>
-            Sofia & <br /> Benjamin
+            Sofía y <br /> Benjamín
           </Heading>
 
           <Heading

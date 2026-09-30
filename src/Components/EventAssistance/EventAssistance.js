@@ -19,6 +19,7 @@ const EventAssistance = ({
   font,
   titleFont,
   icon,
+  dresscodeIcon,
 }) => {
   return (
     <VStack bg={bgColor} width={"100%"} height={"100vh"} px={"2rem"}>
@@ -62,9 +63,13 @@ const EventAssistance = ({
             Confirmar asistencia
           </Button>
         </a>
-        <HStack mt={"2rem"} justifyContent={"center"} alignItems={"center"}>
-          <GiAmpleDress color={iconColor} size={"40px"} opacity={0.8} />{" "}
-          <MdBoy color={iconColor} size={"45px"} opacity={0.8} />
+        <HStack mt={"2rem"} justifyContent={"center"} alignItems={"center"} gap={4}>
+          {dresscodeIcon ? dresscodeIcon : (
+            <>
+              <GiAmpleDress color={iconColor} size={"40px"} opacity={0.8} />
+              <MdBoy color={iconColor} size={"45px"} opacity={0.8} />
+            </>
+          )}
         </HStack>
         <Fade cascade direction="left">
           <Heading

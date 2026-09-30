@@ -17,6 +17,8 @@ import alianzasImg from "./alianzas.jpeg";
 import ramoImg from "./ramo.PNG";
 import FallingFlowers from "./FallingFlowers";
 import fondo from "./fondo sofia.jpeg";
+import trajeImg from "./traje.PNG";
+import vestidoImg from "./vestido.PNG";
 
 const fotosNosotros = [
   require('./1.jpeg'), require('./2.jpeg'), require('./3.jpeg'), require('./4.jpeg'),
@@ -40,87 +42,69 @@ const SofiaYBenjamin = () => {
       <Box position="relative" bg="white" py={4}>
         <Box position="relative" zIndex={1}>
           <Motivation
-            phrase={'"El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser" 1 Corintios 13:4-8'}
+            phrase={
+              <>
+                "El amor todo lo soporta, todo lo cree, todo lo espera y todo lo resiste. El amor verdadero nunca deja de ser"
+                <br />
+                <span style={{ fontSize: '0.75em' }}><strong>1 Corintios 13:4-8</strong></span>
+              </>
+            }
             bgcolor={"transparent"}
           titleColor={"#4A0F61"}
           praseColor={"#4A0F61"}
-          font={'"Lato", sans-serif'}
-          titleFont={'"Raleway", sans-serif'}
+          font={'"Quicksand", sans-serif'}
+          titleFont={'"Bodoni Moda", serif'}
           icon={<Image src={alianzasImg} alt="Alianzas" w="120px" opacity={0.8} />}
-          bottomImage={<Image src={ramoImg} alt="Ramo" w={{ base: "60%", md: "50%" }} transform="rotate(-15deg)" opacity={0.9} />}
+
         />
         </Box>
-        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
+        <Box display="flex" justifyContent="center">
+          <Image src={ramoImg} alt="Ramo" w={{ base: "60%", md: "50%" }} transform="rotate(-15deg)" opacity={0.9} />
+        </Box>
       </Box>
       <Box position="relative" bg="white" py={4}>
         <Box position="relative" zIndex={1}>
       <EventLocation
         title1={"Misa"}
         title2={"Fiesta y civil"}
-        lugar={"Capilla de Nuestra Señora del Rosario de San Nicolás"}
+        lugar={"Parroquia Nuestra Señora de la Caridad"}
         fecha={"21/11/2026"}
         hora={"17:45 hs."}
         fiesta={"Espacio Tafi 1"}
         horafiesta={"19:00 hs."}
-        ubi1={"https://share.google/js3CxD8io19Qj0uLU"}
+        ubi1={"https://maps.app.goo.gl/dUKr7fVi3jmVGtQDA?g_st=iw"}
         ubi2={"https://share.google/aFWwwCU67r7dz380Q"}
         iconColor={"#8C2155"}
         textColor={"#4A0F61"}
-        font={'"Lato", sans-serif'}
-        titleFont={'"Raleway", sans-serif'}
+        font={'"Quicksand", sans-serif'}
+        titleFont={'"Bodoni Moda", serif'}
         bg={"transparent"}
       />
         </Box>
-        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
+
       </Box>
       <Box position="relative" py={4}>
-        <FallingFlowers count={4} />
+        <FallingFlowers count={6} />
         <Box position="relative" zIndex={1}>
         <CountdownTimer
         targetDate="2026-11-21T17:45:00"
         color={"#4A0F61"}
-        font={'"Lato", sans-serif'}
-        titlefont={'"Raleway", sans-serif'}
+        font={'"Quicksand", sans-serif'}
+        titlefont={'"Bodoni Moda", serif'}
         cardBg={"white"}
         cardColor={"#4A0F61"}
         text={"Cuenta regresiva"}
-        icon={<PiClockDuotone fontSize={"45px"} color={"#8C2155"} opacity={0.8} />}
       />
         </Box>
-        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" mt={8} />
+
       </Box>
       <PhotoGrid
         fotos={fotosNosotros}
         bgColor={"white"}
-        fontFamily={'"Raleway", sans-serif'}
+        fontFamily={'"Bodoni Moda", serif'}
         textColor={"#4A0F61"}
       />
-      <Box bg="white" w="100%">
-        <Divider borderColor="#4A0F61" opacity={0.3} w="60%" margin="auto" />
-      </Box>
-      <Box position="relative" bg="white" py={4}>
-        <FallingFlowers count={5} />
-        <Box position="relative" zIndex={1}>
-        <EventAssistance
-        phrase={"¡Esperamos poder contar con tu presencia!"}
-        confirm={"Confirma tu asistencia"}
-        url={"https://docs.google.com/forms/d/e/1FAIpQLSdOrxwQMk_xs3JBaHAiv372Eh84ca4_qO7SxGPKQ5U46TK07Q/viewform?pli=1"}
-        drescode={"Dresscode"}
-        text={"Formal - elegante"}
-        mujeres={"¡ATENCIÓN MUJERES!"}
-        prohibido={
-          "No usar estos colores: blanco, natural, cobre, dorado y azul."
-        }
-        bgColor={"white"}
-        iconColor={"#8C2155"}
-        titleColor={"#4A0F61"}
-        subColor={"#4A0F61"}
-        font={'"Lato", sans-serif'}
-        titleFont={'"Raleway", sans-serif'}
-        icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
-      />
-        </Box>
-      </Box>
+
       <Box position="relative" bgImage={`url('${fondo}')`} bgSize="cover" bgPosition="center" py={4}>
         <Box position="relative" zIndex={1}>
         <PresentInfo
@@ -135,8 +119,38 @@ const SofiaYBenjamin = () => {
         alias={"Alias: sofi.benja.2026"}
         banco={"Naranja X - Titular: Oscar Benjamin Villafane Assef"}
         cuil={"CUIL: 20405330378"}
-        font={'"Lato", sans-serif'}
-        titleFont={'"Raleway", sans-serif'}
+        font={'"Quicksand", sans-serif'}
+        titleFont={'"Bodoni Moda", serif'}
+      />
+        </Box>
+      </Box>
+
+      <Box position="relative" bg="white" py={4}>
+        <FallingFlowers count={5} />
+        <Box position="relative" zIndex={1}>
+        <EventAssistance
+        phrase={<span style={{ textTransform: 'none', fontFamily: '"Quicksand", sans-serif' }}>¡Esperamos poder contar con tu presencia!</span>}
+        confirm={""}
+        url={"https://docs.google.com/forms/d/e/1FAIpQLSdOrxwQMk_xs3JBaHAiv372Eh84ca4_qO7SxGPKQ5U46TK07Q/viewform?pli=1"}
+        drescode={"Dresscode"}
+        text={"Formal - elegante"}
+        mujeres={"¡ATENCIÓN MUJERES!"}
+        prohibido={
+          "No usar estos colores: blanco, natural, cobre, dorado y azul."
+        }
+        bgColor={"white"}
+        iconColor={"#8C2155"}
+        titleColor={"#4A0F61"}
+        subColor={"#4A0F61"}
+        font={'"Quicksand", sans-serif'}
+        titleFont={'"Bodoni Moda", serif'}
+        icon={<FaRegCalendarAlt color="#8C2155" size={"35px"} opacity={0.8} />}
+        dresscodeIcon={
+          <>
+            <Image src={trajeImg} alt="Traje" w={{ base: "40px", md: "50px" }} opacity={0.8} />
+            <Image src={vestidoImg} alt="Vestido" w={{ base: "40px", md: "50px" }} opacity={0.8} />
+          </>
+        }
       />
         </Box>
       </Box>
@@ -145,7 +159,7 @@ const SofiaYBenjamin = () => {
           "¡Estamos muy agradecidos por compartir con ustedes este momento tan especial!"
         }
         bgColor={"#8C2155"}
-        font={'"Lato", sans-serif'}
+        font={'"Quicksand", sans-serif'}
         colorFont={"white"}
       />
     </Box>

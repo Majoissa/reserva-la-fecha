@@ -32,7 +32,7 @@ const PresentPopup = ({
         borderRadius="full"
         px={8}
       >
-        Ver más
+        Datos bancarios
       </Button>
 
       <Modal size={"sm"} isOpen={isOpen} onClose={onClose} isCentered>
